@@ -9,6 +9,10 @@ p {
     color: blue;
 }
 
-body {
-    background-color: rgb(189, 177, 21)
+body{
+    background-color: rgb(216, 163, 19);
+}
+.rules{
+    margin: 25px 100px 25px 100px;
+    text-align: center;
 }
