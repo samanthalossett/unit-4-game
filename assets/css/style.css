@@ -3,40 +3,45 @@ h1 {
     font-size: 50px;
     text-align: center;
     color: rgb(151, 23, 151);
-   
 }
-
 p {
     color: blue;
 }
-
 body{
-    background-color: rgb(216, 163, 19);
+    background-color: gold;
 }
 .rules{
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
+    font-size: 16px;
 }
 #goal {
     background-color: rgb(83, 216, 83);
-    padding: 60px 60px 60px 60px;
+    padding: 40px 40px 40px 40px;
     float: left;
    
 }
 #scores {
     background-color: pink;
-    padding: 45px 60px 45px 60px;
+    padding: 25px 40px 25px 40px;
     float: left;
     color: white;  
     font-weight: bold;
    
 }
 .jewel-image {
-    width: 100%; 
-    max-width: 200px;
+    
+    width: 100%;
+    max-width: 100px;;
     height: auto;
     margin-top: 10px;
     margin-right: 25px;
   }
-  
+#total-score {
+    background-color: turquoise;
+    padding: 30px 3px 30px 30px;
+    align-content: center;
+    color: white;
+    
+}
