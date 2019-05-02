@@ -2,5 +2,13 @@ h1 {
     font-weight: bold;
     font-size: 50px;
     text-align: center;
+    color: rgb(151, 23, 151);
+}
+
+p {
     color: blue;
+}
+
+body {
+    background-color: rgb(189, 177, 21)
 }
