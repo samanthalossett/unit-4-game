@@ -30,7 +30,7 @@ body{
     font-weight: bold;
    
 }
-.jewel-image {
+.jewel-image, .jewel-image-1 {
     
     width: 100%;
     max-width: 100px;;
@@ -45,3 +45,12 @@ body{
     color: white;
     
 }
+.jewel-image-1 {
+    
+    width: 100%;
+    max-width: 100px;;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 225px;
+  }
