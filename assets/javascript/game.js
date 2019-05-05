@@ -2,7 +2,6 @@
     var jewelNumbers;
     var wins= 0;
     var losses= 0;
-    var previousNum= 0;
     var jewel1;
     var jewel2;
     var jewel3;
@@ -19,14 +18,25 @@ var showJewelScore= function(){
 var returnRandomNumber= function(){
     return Math.floor((Math.random() * 12) + 1); 
 }
+
+var incrementLosses= function(){
+    losses+=1;
+    $("#scores")[0].innerHTML = ("Losses: " + "" +losses)
+}
+var incrementWins= function(){
+    wins+=1;
+    $("#scores")[0].innerHTML = ("Wins: " + "" +wins);
+}
 var checkScore= function(){
     if(score > compNumber){  //if the added number is larger than the goal number, you lose //
         alert("You Lose");
-       // losses--;
-    //document.getElementById("Losses:").innerHTML= "Losses: " + losses;
-    //previousNum= 0;
-    //resetStartGame();
+        incrementLosses();
       
+    } else {
+        if(score===compNumber){
+            alert("You win!");
+           incrementWins();//
+        }
     }
 }
 //start game here//
@@ -47,47 +57,29 @@ var resetStartGame = function (){
    resetStartGame(); // calling out the function of starting the game //
 
     $("#jewelry1").on("click", function(){//making the crystals clickable, like buttons but not//
-        console.log("its working");
         score= score + jewel1;
         console.log(score);
         showJewelScore();
         checkScore();
-
     })
     $("#jewelry2").on("click", function(){//making the crystals clickable, like buttons but not//
-        console.log("its working");
         score= score + jewel2;
         console.log(score);
         showJewelScore();
         checkScore();
     })
     $("#jewelry3").on("click", function(){//making the crystals clickable, like buttons but not//
-        console.log("its working");
         score= score + jewel3;
         console.log(score);
         showJewelScore();
         checkScore();
     })
     $("#jewelry4").on("click", function(){//making the crystals clickable, like buttons but not//
-        console.log("its working");
         score= score + jewel4;
         console.log(score);
         showJewelScore();
         checkScore();
     })
-
-
-// else if(score=== compNumber) {    //otherwise, if theyre the same, then you win//
-//     console.log("You win!");
-//     wins++;
-//     document.getElementById("Wins:").innerHTML= "Wins: " + wins;
-//      previousNum= 0;
-//      resetStartGame();
-// }
-//console.log(previousNum);
-
-
-
 //update the "total score" each time a jewel is clicked//
 //when === or != happens, restart the game.//
 
