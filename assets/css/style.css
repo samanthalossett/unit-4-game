@@ -18,25 +18,26 @@ body{
 }
 #goal {
     background-color: rgb(83, 216, 83);
-    padding: 40px 40px 40px 40px;
+    padding: 30px 30px 30px 30px;
     float: left;
    
 }
 #scores {
     background-color: pink;
-    padding: 25px 40px 25px 40px;
+    padding: 25px 40px 20px 40px;
     float: left;
     color: white;  
     font-weight: bold;
    
 }
-.jewel-image, .jewel-image-1 {
+.jewel-image {
     
     width: 100%;
     max-width: 100px;;
     height: auto;
     margin-top: 10px;
     margin-right: 25px;
+   
   }
 #total-score {
     background-color: turquoise;
@@ -45,12 +46,3 @@ body{
     color: white;
     
 }
-.jewel-image-1 {
-    
-    width: 100%;
-    max-width: 100px;;
-    height: auto;
-    margin-top: 10px;
-    margin-right: 25px;
-    margin-left: 225px;
-  }
