@@ -21,11 +21,11 @@ var returnRandomNumber= function(){
 
 var incrementLosses= function(){
     losses+=1;
-    $("#scores")[0].innerHTML = ("Losses: " + "" +losses)
+    $(".Losses")[0].innerHTML = ("Losses: " + "" +losses)
 }
 var incrementWins= function(){
     wins+=1;
-    $("#scores")[0].innerHTML = ("Wins: " + "" +wins);
+    $(".Wins")[0].innerHTML = ("Wins: " + "" +wins);
 }
 var checkScore= function(){
     if(score > compNumber){  //if the added number is larger than the goal number, you lose //
