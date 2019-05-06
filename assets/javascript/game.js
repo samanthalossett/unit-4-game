@@ -39,7 +39,7 @@ var checkScore= function(){
         }
     }
 }
-//start game here//
+//start game here// 
 var resetStartGame = function (){
 
         // make the ID "goal" produce a random number between 19 and 100 or whatever **THIS IS WORKING**//
@@ -56,25 +56,26 @@ var resetStartGame = function (){
 }
    resetStartGame(); // calling out the function of starting the game //
 
-    $("#jewelry1").on("click", function(){//making the crystals clickable, like buttons but not//
+   //making the crystals clickable, like buttons, and assigning them to have a value, then adding that score//
+    $("#jewelry1").on("click", function(){
         score= score + jewel1;
         console.log(score);
         showJewelScore();
         checkScore();
     })
-    $("#jewelry2").on("click", function(){//making the crystals clickable, like buttons but not//
+    $("#jewelry2").on("click", function(){
         score= score + jewel2;
         console.log(score);
         showJewelScore();
         checkScore();
     })
-    $("#jewelry3").on("click", function(){//making the crystals clickable, like buttons but not//
+    $("#jewelry3").on("click", function(){
         score= score + jewel3;
         console.log(score);
         showJewelScore();
         checkScore();
     })
-    $("#jewelry4").on("click", function(){//making the crystals clickable, like buttons but not//
+    $("#jewelry4").on("click", function(){
         score= score + jewel4;
         console.log(score);
         showJewelScore();
